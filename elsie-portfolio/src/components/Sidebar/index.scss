@@ -1,0 +1,126 @@
+/* Navbar compositions */
+.nav-bar {
+  background: #424960;
+  width: 170px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+  /* Styles main logo */
+  .logo {
+    display: block;
+    padding: 8px, 0;
+  }
+  /* Styles logo images */
+  img {
+    display: block;
+    text-align: center;
+    margin: 8px auto;
+    width: 150px;
+    height: auto;
+
+    &.sub-logo {
+      width: 175px;
+    }
+  }
+  /* Navbar icon styling */
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -145px;
+    width: 100%;
+    /* Styles icons */
+    a {
+      font-size: 30px;
+      color: white;
+      display: block;
+      line-height: 51px;
+      height: 90px;
+      position: relative;
+      text-decoration: none;
+      /* Transitions for icons */
+      i {
+        transition: all 0.3s ease-out;
+      }
+      /* Changes colour on hover */
+      &:hover {
+        color: #ecbeb4;
+
+        svg {
+          opacity: 0;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+      /* Changes state after pressing for all icons */
+      &:after {
+        content: '';
+        font-size: 22px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 35px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all;
+      }
+      &:first-child {
+        &::after {
+          content: 'HOME';
+        }
+      }
+    }
+    /* Adds hyperlink text on hover */
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
+      }
+    }
+    a.active {
+      svg {
+        // color: #cb8589;
+        color: white;
+      }
+    }
+  }
+  /* Styling for Github, Linkedin and Twitter icon links */
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 22px;
+        line-height: 30px;
+        /* Adds colour on hover */
+        &:hover svg {
+          color: white;
+        }
+      }
+    }
+  }
+}
