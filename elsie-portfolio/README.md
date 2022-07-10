@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+https://www.w3schools.com/react/react_router.asp
+https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons
+https://www.npmjs.com/package/@fortawesome/free-solid-svg-icons
+https://www.npmjs.com/package/@fortawesome/react-fontawesome
+https://v5.reactrouter.com/web/api/Route
+https://stackoverflow.com/questions/41676054/how-to-add-fonts-to-create-react-app-based-projects
+https://github.com/react-boilerplate/react-boilerplate/issues/1340
+https://forum.webdeveloper.com/d/274289-beginner-question-why-use-ltbodygt-and-lthtmlgt-tags
+https://reactjs.org/docs/introducing-jsx.html
+ls
